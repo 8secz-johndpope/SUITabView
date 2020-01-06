@@ -11,9 +11,10 @@
 		45D978A723C31E460050A679 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D978A623C31E460050A679 /* SceneDelegate.swift */; };
 		45D978A923C31E460050A679 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D978A823C31E460050A679 /* ViewController.swift */; };
 		45D978AC23C31E460050A679 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D978AA23C31E460050A679 /* Main.storyboard */; };
-		45D978AF23C31E460050A679 /* SUITabView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45D978AD23C31E460050A679 /* SUITabView.xcdatamodeld */; };
 		45D978B123C31E480050A679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D978B023C31E480050A679 /* Assets.xcassets */; };
 		45D978B423C31E480050A679 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D978B223C31E480050A679 /* LaunchScreen.storyboard */; };
+		45D978C123C320770050A679 /* SUITabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D978BF23C320770050A679 /* SUITabBar.swift */; };
+		45D978C223C320770050A679 /* SUITabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45D978C023C320770050A679 /* SUITabBar.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +23,11 @@
 		45D978A623C31E460050A679 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		45D978A823C31E460050A679 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		45D978AB23C31E460050A679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		45D978AE23C31E460050A679 /* SUITabView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SUITabView.xcdatamodel; sourceTree = "<group>"; };
 		45D978B023C31E480050A679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45D978B323C31E480050A679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45D978B523C31E480050A679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45D978BF23C320770050A679 /* SUITabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUITabBar.swift; sourceTree = "<group>"; };
+		45D978C023C320770050A679 /* SUITabBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SUITabBar.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +63,12 @@
 				45D978A423C31E460050A679 /* AppDelegate.swift */,
 				45D978A623C31E460050A679 /* SceneDelegate.swift */,
 				45D978A823C31E460050A679 /* ViewController.swift */,
+				45D978BF23C320770050A679 /* SUITabBar.swift */,
+				45D978C023C320770050A679 /* SUITabBar.xib */,
 				45D978AA23C31E460050A679 /* Main.storyboard */,
 				45D978B023C31E480050A679 /* Assets.xcassets */,
 				45D978B223C31E480050A679 /* LaunchScreen.storyboard */,
 				45D978B523C31E480050A679 /* Info.plist */,
-				45D978AD23C31E460050A679 /* SUITabView.xcdatamodeld */,
 			);
 			path = SUITabView;
 			sourceTree = "<group>";
@@ -131,6 +134,7 @@
 				45D978B423C31E480050A679 /* LaunchScreen.storyboard in Resources */,
 				45D978B123C31E480050A679 /* Assets.xcassets in Resources */,
 				45D978AC23C31E460050A679 /* Main.storyboard in Resources */,
+				45D978C223C320770050A679 /* SUITabBar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,8 +147,8 @@
 			files = (
 				45D978A923C31E460050A679 /* ViewController.swift in Sources */,
 				45D978A523C31E460050A679 /* AppDelegate.swift in Sources */,
-				45D978AF23C31E460050A679 /* SUITabView.xcdatamodeld in Sources */,
 				45D978A723C31E460050A679 /* SceneDelegate.swift in Sources */,
+				45D978C123C320770050A679 /* SUITabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,19 +344,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		45D978AD23C31E460050A679 /* SUITabView.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				45D978AE23C31E460050A679 /* SUITabView.xcdatamodel */,
-			);
-			currentVersion = 45D978AE23C31E460050A679 /* SUITabView.xcdatamodel */;
-			path = SUITabView.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 45D9789923C31E460050A679 /* Project object */;
 }

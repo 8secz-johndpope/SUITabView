@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="pdS-gd-CLf" customClass="SUITabBar" customModule="SUITabView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="596"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YdD-dW-EvK">
+                    <rect key="frame" x="72.666666666666686" y="492" width="250" height="58"/>
+                    <subviews>
+                        <visualEffectView opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="76z-eb-LKC">
+                            <rect key="frame" x="0.0" y="0.0" width="250" height="58"/>
+                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="h5r-WA-TNC">
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="58"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </view>
+                            <blurEffect style="dark"/>
+                        </visualEffectView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="vGV-al-Xc8">
+                            <rect key="frame" x="2" y="0.0" width="246" height="58"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMq-2m-1HZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="60" height="58"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="58" id="ICG-Wd-Igf"/>
+                                        <constraint firstAttribute="width" constant="60" id="Iwc-K0-u8V"/>
+                                    </constraints>
+                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" image="flame" catalog="system"/>
+                                    <state key="selected">
+                                        <color key="titleColor" red="0.75294117650000003" green="0.6705882353" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onItemClick:" destination="pdS-gd-CLf" eventType="touchUpInside" id="UBx-KD-8el"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucq-CS-3MH">
+                                    <rect key="frame" x="61.999999999999986" y="0.0" width="60" height="58"/>
+                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" image="tray.full" catalog="system"/>
+                                    <state key="selected">
+                                        <color key="titleColor" red="0.75294117650000003" green="0.6705882353" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onItemClick:" destination="pdS-gd-CLf" eventType="touchUpInside" id="mId-xq-Wbk"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fdf-OQ-omO">
+                                    <rect key="frame" x="124" y="0.0" width="60" height="58"/>
+                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" image="sportscourt" catalog="system"/>
+                                    <state key="selected">
+                                        <color key="titleColor" red="0.75294117650000003" green="0.6705882353" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onItemClick:" destination="pdS-gd-CLf" eventType="touchUpInside" id="xET-WH-vir"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OF-v2-S4q">
+                                    <rect key="frame" x="186" y="0.0" width="60" height="58"/>
+                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" image="folder" catalog="system"/>
+                                    <state key="selected">
+                                        <color key="titleColor" red="0.75294117650000003" green="0.6705882353" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onItemClick:" destination="pdS-gd-CLf" eventType="touchUpInside" id="LIB-Mz-eic"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="76z-eb-LKC" firstAttribute="bottom" secondItem="YdD-dW-EvK" secondAttribute="bottom" id="2zE-sD-eJJ"/>
+                        <constraint firstItem="vGV-al-Xc8" firstAttribute="leading" secondItem="yz8-zV-Q8S" secondAttribute="leading" constant="2" id="Ad5-JG-MRW"/>
+                        <constraint firstAttribute="bottom" secondItem="vGV-al-Xc8" secondAttribute="bottom" id="Iew-Ga-FlF"/>
+                        <constraint firstItem="vGV-al-Xc8" firstAttribute="top" secondItem="YdD-dW-EvK" secondAttribute="top" id="IuY-fk-SIN"/>
+                        <constraint firstItem="yz8-zV-Q8S" firstAttribute="trailing" secondItem="76z-eb-LKC" secondAttribute="trailing" id="RDb-eW-8r9"/>
+                        <constraint firstItem="yz8-zV-Q8S" firstAttribute="trailing" secondItem="vGV-al-Xc8" secondAttribute="trailing" constant="2" id="Z4U-kJ-eeC"/>
+                        <constraint firstItem="76z-eb-LKC" firstAttribute="top" secondItem="YdD-dW-EvK" secondAttribute="top" id="cH2-cC-fpa"/>
+                        <constraint firstItem="76z-eb-LKC" firstAttribute="leading" secondItem="yz8-zV-Q8S" secondAttribute="leading" id="wSz-4f-oX5"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="yz8-zV-Q8S"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Gah-O8-mZU" firstAttribute="bottom" secondItem="YdD-dW-EvK" secondAttribute="bottom" constant="12" id="1C9-6D-rGM"/>
+                <constraint firstItem="YdD-dW-EvK" firstAttribute="centerX" secondItem="pdS-gd-CLf" secondAttribute="centerX" id="bf1-zz-x6d"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Gah-O8-mZU"/>
+            <connections>
+                <outlet property="itemContainerView" destination="YdD-dW-EvK" id="RrR-9M-VTt"/>
+                <outletCollection property="barItems" destination="IMq-2m-1HZ" collectionClass="NSMutableArray" id="07T-d8-KeV"/>
+                <outletCollection property="barItems" destination="ucq-CS-3MH" collectionClass="NSMutableArray" id="bMS-US-yov"/>
+                <outletCollection property="barItems" destination="Fdf-OQ-omO" collectionClass="NSMutableArray" id="ePd-z4-Go1"/>
+                <outletCollection property="barItems" destination="1OF-v2-S4q" collectionClass="NSMutableArray" id="0f4-bg-E7r"/>
+            </connections>
+            <point key="canvasLocation" x="34.399999999999999" y="15.517241379310345"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="flame" catalog="system" width="54" height="64"/>
+        <image name="folder" catalog="system" width="64" height="46"/>
+        <image name="sportscourt" catalog="system" width="64" height="40"/>
+        <image name="tray.full" catalog="system" width="64" height="44"/>
+    </resources>
+</document>
